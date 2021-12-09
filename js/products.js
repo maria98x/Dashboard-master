@@ -56,5 +56,13 @@ const products = [
     status: "Free Shopping",
   },
 ];
-
+for (var i =0;i<products.length;i++){
+  var setImg = document.getElementById("img"+products[i].ProductId);
+  setImg.src= products[i].image;
+  document.getElementById("name"+products[i].ProductId).innerHTML = products[i].name;
+  document.getElementById("description"+products[i].ProductId).innerHTML = products[i].description;
+  document.getElementById("price"+products[i].ProductId).innerHTML = products[i].price+" SAR";
+  document.getElementById("status"+products[i].ProductId).innerHTML = products[i].status;
+    
+}
 
